@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Tuiter - Explore</title>
+</head>
+
+<body>
+  <div class="container-fluid" width="100%">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-xl-2 col-sm-2 col-lg-1 .col-xs-3">
+        <!-- Navigation Sidebar -->
+        <div class="sidebar">
+          <!-- Links List -->
+          <ul class="list-group" width="100%">
+            <!-- Links -->
+            <li class="list-group-item"><a class="wd-nav-link active" href="explore.html">
+              <span class="colored"><i class="fab fa-twitter" aria-hidden="true"></i> </span>
+            </a></li>
+            <li class="list-group-item"><a class="wd-nav-link active" href="../home.html"> <span class="colored">
+              <i class="fas fa-home mr-2"></i> <span class="home">Home</span></span>
+            </a></li>
+            <li class="list-group-item active">
+              <i class="fas fa-hashtag mr-2"></i>  <span class="explore">Explore</span>
+            </a></li>
+            <li class="list-group-item"><a class="wd-nav-link active" href="#">
+              <span class="colored"><i class="fas fa-bell mr-2"></i> <span class="notifications">Notifications</span></span>
+            </a></li>
+            <li class="list-group-item"><a class="wd-nav-link active" href="#">
+              <span class="colored"><i class="fas fa-envelope mr-2"></i> <span class="messages">Messages</span></span>
+            </a></li>
+            <li class="list-group-item"><a class="wd-nav-link active" href="../bookmarks/bookmarks-css.html">
+              <span class="colored"><i class="fas fa-bookmark mr-2"></i> <span class="bookmarks">Bookmarks</span> </span>
+            </a></li>
+            <li class="list-group-item"><a class="wd-nav-link active" href="#">
+              <span class="colored"><i class="fas fa-list mr-2"></i> <span class="lists"> Lists</span> </span>
+            </a></li>
+            <li class="list-group-item"><a class="wd-nav-link active" href="../profile.html">
+              <span class="colored"><i class="fas fa-user mr-2"></i> <span class="profile"> Profile</span> </span>
+            </a></li>
+            <li class="list-group-item"><a class="wd-nav-link active" href="#">
+              <span class="colored"><span class="wd-more-icon">
+                <i class="fas fa-ellipsis-h"></i> 
+              </span> <span class="more">More</span></span> </li>
+            <!-- Explore Link (Highlighted) -->
+          </ul>
+
+          <!-- Tuit Button -->
+          <button class="btn btn-primary btn-block rounded-pill">Tuit</button>
+        </div>
+      </div>
+
+      <!-- Center Column -->
+      <div class="col-xl-6 col-sm-10  col-lg-7 .col-xs-11">
+        <!-- Search Field -->
+        <div class="wd-search-bar">
+          <div class="wd-search-container input-group">
+            <div class="input-group-prepend">
+              <button class="input-group-text wd-search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <input type="text" class="form-control wd-search-input" placeholder="Search Tuiter">
+          </div>
+          <button class="btn wd-gear-button"><span class="bluecolored"><i class="fas fa-cog"></i></button></span>
+        </div>
+        
+        
+        
+
+        <!-- Tabs -->
+        <ul class="nav nav-tabs mt-4">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">For You</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+        </ul>
+
+        <!-- Image -->
+        <div class="position-relative mt-3">
+          <div class="wd-image-container">
+          <img src="../starship.jpeg" height="100%" width="100%" class="img-fluid" alt="Image">
+          <h1 class="wd-image-text">SpaceX's Starship</h1>
+        </div>
+        </div>
+        
+
+        <ul class="list-group wd-tuits-list">
+          <li class="list-group-item wd-tuit">
+            <div class="d-flex justify-content-between align-items-center wd-tuit-header">
+              <span class="wd-tuit-category">Web Development</span>
+              <span class="wd-tuit-ellipsis"><div class="wd-tuit-image">
+                <img src="../logo-react.svg" height="100" width="100" alt="Image">
+              </div></span>
+            </div>
+            <div class="d-flex align-items-center wd-tuit-author">
+              <span class="wd-tuit-author-name">ReactJS<i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="d-flex align-items-center wd-tuit-author">
+              <span class="wd-tuit-author-tuits">React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</span>
+            </div>
+          </li>
+          <li class="list-group-item wd-tuit">
+            <div class="d-flex align-items-center wd-tuit-author">
+              <span class="wd-tuit-author-name">JavaScript<i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="d-flex align-items-center wd-tuit-author">
+              <span class="wd-tuit-author-tuits">JavaScript is programming language that can run on browsers as well as desktops</span>
+              <span class="wd-tuit-ellipsis"><div class="wd-tuit-image">
+                <img src="../JavaScript-logo.png" height="100" width="100" alt="Image"> </span> </div>
+            </div> 
+            <div class="d-flex justify-content-between align-items-center wd-tuit-header">
+              <span class="wd-tuit-category">123K Tweets</span>
+            </div>
+          </li>
+          <li class="list-group-item wd-tuit">
+            <div class="d-flex justify-content-between align-items-center wd-tuit-header">
+              <span class="wd-tuit-category">Web Development</span>
+              <span class="wd-tuit-ellipsis"><div class="wd-tuit-image">
+                <img src="../jquery.png" height="100" width="100" alt="Image">
+              </div></span>
+            </div>
+            <div class="d-flex align-items-center wd-tuit-author">
+              <span class="wd-tuit-author-name">JQuery</span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center wd-tuit-header">
+              <span class="wd-tuit-category">123K Tweets</span>
+            </div>
+          </li>
+          <li class="list-group-item wd-tuit">
+            <div class="d-flex justify-content-between align-items-center wd-tuit-header">
+              <span class="wd-tuit-category">Web Development</span>
+              <span class="wd-tuit-ellipsis"><div class="wd-tuit-image">
+                <img src="../node.png" height="100" width="100" alt="Image">
+              </div></span>
+            </div>
+            <div class="d-flex align-items-center wd-tuit-author">
+              <span class="wd-tuit-author-name">NodeJS<i class="fas fa-check-circle"></i></span>
+            </div>
+            <div class="d-flex justify-content-between align-items-center wd-tuit-header">
+              <span class="wd-tuit-category">123K Tweets</span>
+            </div>
+          </li>
+        </ul>
+        
+      </div>
+    
+          <!-- Right Column -->
+          <div class="col-xl-4  col-md-3 col-sm-3 col-lg-4" width="100%">
+            <!-- Who to Follow List -->
+            <ul class="list-group mt-3">
+              <!-- User 1 -->
+              <li class="list-group-item">
+                <div class="row">            
+                  <div class="col-md-7">
+                    <p class="mb-1"><strong>Who to follow</strong></p>
+                  </div>      
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="rounded-circle user-image"> <img src="../java.png" height="48" width="48"/></div>
+                  </div>
+                  <div class="col-md-7">
+                    <p class="mb-1"><strong>Java</strong> <i class="fas fa-check-circle"></i></p>
+                    <p class="mb-0">@Java </p>
+                  </div>
+                  <div class="col-md-3">
+                    <button class="btn btn-primary btn-sm rounded-pill">Follow</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="rounded-circle user-image"> <img src="../virgin.png" height="48" width="48"/></div>
+                  </div>
+                  <div class="col-md-7">
+                    <p class="mb-1"><strong>Virgin Galactic</strong> <i class="fas fa-check-circle"></i></p>
+                    <p class="mb-0">@virgingalactic </p>
+                  </div>
+                  <div class="col-md-3">
+                    <button class="btn btn-primary btn-sm rounded-pill">Follow</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="rounded-circle user-image"> <img src="../NASA_logo.svg.webp" height="48" width="48"/></div>
+                  </div>
+                  <div class="col-md-7">
+                    <p class="mb-1"><strong>NASA</strong> <i class="fas fa-check-circle"></i></p>
+                    <p class="mb-0">@NASA</p>
+                  </div>
+                  <div class="col-md-3">
+                    <button class="btn btn-primary btn-sm rounded-pill">Follow</button>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="rounded-circle user-image"> <img src="../Tesla_T_symbol.svg.png" height="48" width="48"/></div>
+                  </div>
+                  <div class="col-md-7">
+                    <p class="mb-1"><strong>Tesla</strong> <i class="fas fa-check-circle"></i></p>
+                    <p class="mb-0">@Tesla </p>
+                  </div>
+                  <div class="col-md-3">
+                    <button class="btn btn-primary btn-sm rounded-pill">Follow</button>
+                  </div>
+                </div>
+              </li>
+                </ul>
+              </div>   
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+      
+      
+    </body>
+    
+    </html>
