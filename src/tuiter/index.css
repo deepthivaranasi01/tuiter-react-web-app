@@ -13,3 +13,80 @@
     margin-top: 30px;
 }
 
+@media (max-width: 1200px) {
+  .col-xl-2 {
+    width:100%;
+  }
+  .col-xl-6 {
+    width: 100%;
+  }
+  .col-xl-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-sm-3 {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 1199px) {
+  .home{
+    display: none;
+  }
+  .explore{
+    display: none;
+  }
+  .notifications{
+    display: none;
+  }
+  .messages{
+    display: none;
+  }
+  .bookmarks{
+    display: none;
+  }
+  .lists{
+    display: none;
+  }
+  .profile{
+    display: none;
+  }
+  .more{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .col-md-4 {
+    display: none;
+  }
+  
+  
+}
+
+@media (max-width: 576px) {
+  .col-xs-6 {
+    width:100%;
+  }
+  .col-xs-6 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1399px) {
+  .col-xl-4{
+    width: 100%;
+  }
+  .col-xl-6{
+    width:100%;
+  }
+  .col-xl-2{
+    width:100%;
+  }
+
+}
+
+
