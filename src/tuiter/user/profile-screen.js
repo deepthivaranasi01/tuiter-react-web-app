@@ -21,10 +21,19 @@ function ProfileScreen() {
   }
  };
 
- useEffect(async () => {
-   const { payload } = await dispatch(profileThunk());
-   setProfile(payload);
- }, []);
+ useEffect(() => {
+
+    const fetchProfile = async () => {
+
+      const { payload } = await dispatch(profileThunk());
+
+      setProfile(payload);
+
+    };
+
+    fetchProfile();
+
+  }, [dispatch]);
  
  return (   <div>
     <h1>Profile Screen</h1>
