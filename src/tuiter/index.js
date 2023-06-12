@@ -13,6 +13,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import ProfileScreen from "./user/profile-screen";
 import LoginScreen from "./user/login-screen";
+import RegisterScreen from "./user/register-screen";
 import authReducer from "./reducers/auth-reducer";
 
 const store = configureStore(
@@ -37,6 +38,7 @@ function Tuiter() {
      <Route path="/bookmarks" element={<BookmarksScreen/>} />
      <Route path="/login"    element={<LoginScreen    />} />
      <Route path="/profile" element={<ProfileScreen />} />
+     <Route path="/register" element={<RegisterScreen />} />
    </Routes>
  </div>
     
