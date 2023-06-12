@@ -3,7 +3,7 @@ import React, {useEffect}  from "react";
 import TuitSummaryItem
   from "../tuit-item";
 import {useDispatch,useSelector} from "react-redux";
-import {findTuitsThunk} from "../services/tuits-thunks";
+import {findTuitsThunk} from "../../services/tuits-thunks";
 
 const TuitSummaryList = () => {
   const { tuits, loading } = useSelector(state => state.tuits)
