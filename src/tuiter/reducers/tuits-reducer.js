@@ -73,6 +73,12 @@ const tuitsSlice = createSlice({
           tuit.likes -= 1;
         }
       },
+      dislikeTuit(state, action) {
+        const tuit = state.tuits.find(tuit => tuit._id === action.payload);
+        if (tuit) {
+          tuit.dislikes += 1;
+        }
+      },
     createTuit(state, action) {
       state.tuits.unshift({
         ...action.payload,

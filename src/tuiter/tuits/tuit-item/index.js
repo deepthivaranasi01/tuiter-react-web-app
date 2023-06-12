@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { likeTuit, unlikeTuit } from "../../reducers/tuits-reducer";
+import { likeTuit, unlikeTuit, dislikeTuit } from "../../reducers/tuits-reducer";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 
@@ -17,6 +17,11 @@ const TuitSummaryItem = ({ tuit }) => {
     } else {
       dispatch(likeTuit(id));
     }
+  };
+
+
+  const dislikeTuitHandler = (id) => {
+      dispatch(dislikeTuit(id)); 
   };
 
   return (
@@ -63,6 +68,18 @@ const TuitSummaryItem = ({ tuit }) => {
           )}
           &nbsp;{tuit.likes}
         </div>
+
+
+        <div className="col-2">   
+            <i
+              className="fas fa-thumbs-down"
+              style={{ color: "grey" }}
+              onClick={() => dislikeTuitHandler(tuit._id)}
+            ></i>    
+          &nbsp;{tuit.dislikes}
+        </div>
+
+        
         <div className="col-3">
           <i className="fa fa-upload"></i>
         </div>
