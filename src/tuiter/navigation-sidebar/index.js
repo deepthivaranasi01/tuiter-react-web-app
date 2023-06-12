@@ -38,10 +38,22 @@ const NavigationSidebar = () => {
           </Link>
         )
       )}
-      {!currentUser && <Link className="list-group" to="/tuiter/login">   Login   </Link>}
-     {!currentUser && <Link className="list-group" to="/tuiter/register">Register</Link>}
-     { currentUser && <Link className="list-group" to="/tuiter/profile"> Profile </Link>}
 
+{!currentUser && (
+        <>
+          <Link to="/tuiter/login" className="list-group-item text-capitalize">
+            <i className="fas fa-sign-in-alt"></i> Login
+          </Link>
+          <Link to="/tuiter/register" className="list-group-item text-capitalize">
+            <i className="fas fa-user-plus"></i> Register
+          </Link>
+        </>
+      )}
+      {currentUser && (
+        <Link to="/tuiter/profile" className="list-group-item text-capitalize">
+          <i className="fas fa-user"></i> Profile
+        </Link>
+      )}
     </div>
   );
 };

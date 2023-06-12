@@ -3,6 +3,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
 import { profileThunk, logoutThunk, updateUserThunk }
   from "../services/auth-thunks";
+
+
 function ProfileScreen() {
  const { currentUser } = useSelector((state) => state.user);
  const [profile, setProfile] = useState(currentUser);
@@ -13,6 +15,7 @@ function ProfileScreen() {
    const { payload } = await dispatch(profileThunk());
    setProfile(payload);
  }, []);
+ 
  return (   <div>
     <h1>Profile Screen</h1>
     {profile && (<div>
@@ -44,6 +47,6 @@ function ProfileScreen() {
      }}>                   Logout</button>
     <button onClick={save}>Save  </button>
    </div>
- ); 
+ )
 }
 export default ProfileScreen;
