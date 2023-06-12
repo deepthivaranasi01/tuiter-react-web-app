@@ -80,7 +80,7 @@ const TuitSummaryItem = ({ tuit }) => {
         </div>
 
         
-        <div className="col-3">
+        <div className="col-2">
           <i className="fa fa-upload"></i>
         </div>
       </div>
