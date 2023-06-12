@@ -36,7 +36,6 @@ function Tuiter() {
      <Route path="/explore" element={<Explore/>} />
      <Route path="/bookmarks" element={<BookmarksScreen/>} />
      <Route path="/login"    element={<LoginScreen    />} />
-   <Route path="/register" element={<RegisterScreen />} />
            <Route path="/profile"  element={<ProfileScreen  />} />
 
      <Route path="/profile" element={<ProfileScreen />} />
