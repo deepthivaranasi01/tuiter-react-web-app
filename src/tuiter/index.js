@@ -3,7 +3,6 @@ import Nav from "../nav";
 import NavigationSidebar from "./navigation-sidebar";
 import HomeScreen from "./home-screen";
 import BookmarksScreen from "./bookmarks-screen";
-import ProfileScreen from "./profile-screen"
 import WhoToFollowList
   from "./who-to-follow-list";
 import "./index.css"
