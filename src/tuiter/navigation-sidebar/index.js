@@ -39,7 +39,7 @@ const NavigationSidebar = () => {
         )
       )}
 
-{currentUser && (
+{!currentUser && (
         <>
           <Link to="/tuiter/login" className="list-group-item text-capitalize">
             <i className="fas fa-sign-in-alt"></i> Login
