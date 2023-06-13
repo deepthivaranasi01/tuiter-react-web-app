@@ -19,13 +19,14 @@ export const logout = async () => {
    export const profile = async () => {
     const response = await api.post(`${USERS_URL}/profile`);
     console.log(response)
-    return response.data;
+    return response;
    };
    export const updateUser = async (user) => {
     const response = await api.put(`${USERS_URL}/${user._id}`, user);
     return response.data;
    };
-   export const register = async ({ username, password }) => { const response = await api.post(`${USERS_URL}/register`);
-   return response.data;
-}
-   
+   export const register = async ({ username, password }) => { 
+    const response = await api.post(`${USERS_URL}/register`, { username, password });
+    return response.data;
+    }
+ 

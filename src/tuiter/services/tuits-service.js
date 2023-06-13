@@ -17,5 +17,5 @@ return response.data
 export const updateTuit = async (tuit) => {
     const response = await axios
     .put(`${TUITS_API}/${tuit._id}`, tuit);
-  return tuit;
+  return response;
 }

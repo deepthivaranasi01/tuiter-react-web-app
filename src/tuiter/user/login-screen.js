@@ -19,17 +19,10 @@ function LoginScreen() {
 
 
  try {
-
   const user = await dispatch(loginThunk({ username, password }));
-
   if (user.payload) navigate("/tuiter/profile");
-
   else {
-
    console.log("error")
-
-      
-
     };
 
   }
