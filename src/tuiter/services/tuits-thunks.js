@@ -13,13 +13,32 @@ export const deleteTuitThunk = createAsyncThunk(
       return tuitId
   });
 
+  const currentUser = {
+    userName: "NASA",
+    handle: "@NASA",
+    image: "./nasa.png",
+    topic: "Space",
+    time: "2h",
+    liked: false,
+    replies: 0,
+    retuits: 0,
+    likes: 0,
+    dislikes: 0,
+  };
+
   export const createTuitThunk = createAsyncThunk(
     'tuits/createTuit',
-    async (tuit) => {
-      const newTuit = await service.createTuit(tuit)
-      return newTuit
-  });
-
+    async (tuitData) => {
+      const tuit = { ...tuitData, ...currentUser }; 
+      try {
+        const newTuit = await service.createTuit(tuit);
+        return newTuit;
+      } catch (error) {
+        console.error("Error creating tuit:", error);
+        throw error;
+      }
+    }
+  );
 
   export const updateTuitThunk =
   createAsyncThunk(

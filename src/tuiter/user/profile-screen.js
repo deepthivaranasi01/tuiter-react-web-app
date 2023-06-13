@@ -46,11 +46,9 @@ function ProfileScreen() {
       const { payload } = await dispatch(profileThunk());
 
       setProfile(payload);
+      console.log("payload"+payload)
 
     };
-
-
-
 
     fetchProfile();
 
@@ -59,9 +57,7 @@ function ProfileScreen() {
 
 
 
-  console.log("profile1", profile);
-
-
+ 
 
 
   return (

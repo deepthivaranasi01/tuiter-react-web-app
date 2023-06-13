@@ -1,10 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
+import tuits from './tuits.json';
 import {createTuitThunk,deleteTuitThunk,findTuitsThunk} from "../services/tuits-thunks";
 const initialState = {
    tuits: [],
    loading: false
 }
-
 
 const currentUser = {
     "userName": "NASA",
@@ -50,7 +50,7 @@ const tuitsSlice = createSlice({
       state.tuits.push(payload)
   }
  },
- //initialState: { tuits: tuits },
+ 
  reducers: {
     deleteTuit(state, action) {
         const index = state.tuits
@@ -65,7 +65,6 @@ const tuitsSlice = createSlice({
           tuit.likes += 1;
         }
       },
-  
       unlikeTuit(state, action) {
         const tuit = state.tuits.find(tuit => tuit._id === action.payload);
         if (tuit) {
