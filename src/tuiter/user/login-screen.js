@@ -8,13 +8,40 @@ function LoginScreen() {
  const navigate = useNavigate();
  const dispatch = useDispatch();
  const handleLogin = async () => {
-  try {
+  /*try {
     await dispatch(loginThunk({ username, password }));
     navigate("/tuiter/profile");
   } catch (e) {
     alert(e);
   }
  };
+ */
+
+
+ try {
+
+  const user = await dispatch(loginThunk({ username, password }));
+
+  if (user.payload) navigate("/tuiter/profile");
+
+  else {
+
+   console.log("error")
+
+      
+
+    };
+
+  }
+
+ catch (e) {
+
+  alert(e);
+
+}
+
+};
+
  return (<div>
     <h1>Login Screen</h1>
     <div className="mt-2">

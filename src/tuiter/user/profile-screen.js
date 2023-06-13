@@ -39,7 +39,7 @@ function ProfileScreen() {
 
 
 
-  useEffect(() => {
+  /*useEffect(() => {
 
     const fetchProfile = async () => {
 
@@ -55,7 +55,22 @@ function ProfileScreen() {
   }, [dispatch]);
 
 
+*/
 
+useEffect(() => {
+
+  async function fetchProfile() {
+
+    const { payload } = await dispatch(profileThunk());
+    console.log(payload)
+
+    setProfile(payload);
+
+  }
+
+  fetchProfile();
+
+}, [dispatch]);
 
  
 
