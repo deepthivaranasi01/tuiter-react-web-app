@@ -13,7 +13,7 @@ const NavigationSidebar = () => {
     { name: "messages", icon: "fas fa-envelope" },
     { name: "bookmarks", icon: "fas fa-bookmark" },
     { name: "lists", icon: "fas fa-list-ul" },
-    { name: "profile", icon: "fas fa-user" },
+    
     { name: "more", icon: "fas fa-ellipsis-h" },
   ];
 

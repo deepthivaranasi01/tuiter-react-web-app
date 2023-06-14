@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-//import tuits from './tuits.json';
+import tuits from './tuits.json';
 import {createTuitThunk,deleteTuitThunk,findTuitsThunk,updateTuitThunk} from "../services/tuits-thunks";
 const initialState = {
    tuits: [],
@@ -20,7 +20,7 @@ const currentUser = {
     "replies": 0,
     "retuits": 0,
     "likes": 0,
-    "dislikes":0,
+    "dislikes" : 0,
    }
    
 const tuitsSlice = createSlice({
